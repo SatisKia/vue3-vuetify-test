@@ -40,7 +40,8 @@
       <v-checkbox v-bind:ripple="false" label="checkbox 1 (default)" v-model="state.checkboxValue1" v-on:change="changeCheckbox1" />
     </v-card-actions>
     <v-card-actions class="mb-3 pa-0 text-body-1" v-bind:style="{ 'background-color': state.backgroundColor }">
-      <v-checkbox label="checkbox 2 (hide details)" v-model="state.checkboxValue2" v-on:change="changeCheckbox2" hide-details v-bind:disabled="true" />
+      <!--<v-checkbox label="checkbox 2 (hide details)" v-model="state.checkboxValue2" v-on:change="changeCheckbox2" hide-details v-bind:disabled="true" />-->
+      <v-checkbox label="checkbox 2 (hide details)" v-model="state.checkboxValue1" v-on:change="changeCheckbox2" hide-details v-bind:disabled="true" />
     </v-card-actions>
     <!-- ラジオボタン -->
     <v-card-actions class="mb-3 pa-0 text-body-1" v-bind:style="{ 'background-color': state.backgroundColor }">
