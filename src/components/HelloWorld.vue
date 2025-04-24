@@ -146,6 +146,29 @@
     <v-card-text class="mb-3 pa-0 text-body-1" v-bind:style="{ 'background-color': state.backgroundColor }">
       <v-textarea label="solo-inverted (hide details)" variant="solo-inverted" hide-details v-bind:disabled="true" />
     </v-card-text>
+    <!-- テーブル -->
+    <v-card-text class="mb-3 pa-0 text-body-1" v-bind:style="{ 'background-color': state.backgroundColor }">
+      <table style="width:100%">
+        <tbody>
+          <tr>
+            <td style="width:33.3%; height:48px; text-align:left" v-bind:style="{ 'background-color': state.backgroundColor }">text-align left</td>
+            <td style="width:33.3%; height:48px; text-align:center" v-bind:style="{ 'background-color': state.backgroundColor2 }">text-align center</td>
+            <td style="width:33.3%; height:48px; text-align:right" v-bind:style="{ 'background-color': state.backgroundColor }">text-align right</td>
+          </tr>
+        </tbody>
+      </table>
+    </v-card-text>
+    <v-card-text class="mb-3 pa-0 text-body-1" v-bind:style="{ 'background-color': state.backgroundColor }">
+      <v-table style="width:100%">
+        <tbody>
+          <tr>
+            <td class="px-0 text-body-1 text-left" style="width:33.3%; height:48px" v-bind:style="{ 'background-color': state.backgroundColor2 }">text-left</td>
+            <td class="px-0 text-body-1 text-center" style="width:33.3%; height:48px" v-bind:style="{ 'background-color': state.backgroundColor }">text-center</td>
+            <td class="px-0 text-body-1 text-right" style="width:33.3%; height:48px" v-bind:style="{ 'background-color': state.backgroundColor2 }">text-right</td>
+          </tr>
+        </tbody>
+      </v-table>
+    </v-card-text>
   </v-card-text>
 </template>
 
